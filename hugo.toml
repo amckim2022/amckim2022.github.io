@@ -1,0 +1,5 @@
+baseURL = 'https://amckim2022.github.io/'
+languageCode = 'en-us'
+title = 'Ashley McKim'
+theme = "PaperMod"
+
