@@ -1,7 +1,9 @@
 baseURL = 'https://amckim2022.github.io/'
 publishDir = "docs"
 languageCode = 'en-us'
-title = 'Ashley McKim'
+[params.homeInfoParams]
+    title = 'Ashley McKim's Website'
+    Content = "About me, projects, and resume"
 theme = "PaperMod"
 
 # hugo.toml
