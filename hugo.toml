@@ -21,4 +21,8 @@ theme = "PaperMod"
     url  = "/about/"
     weight = 3
 
+[[params.socialIcons]]
+name = "Email"
+url  = "amckim2022@my.fit.edu"
+
 
