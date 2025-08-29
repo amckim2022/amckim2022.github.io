@@ -1,12 +1,20 @@
-baseURL = 'https://amckim2022.github.io/'
+baseURL = "https://amckim2022.github.io/"
 publishDir = "docs"
-languageCode = 'en-us'
-[params.homeInfoParams]
-    title = 'Ashley McKim's Website'
-    Content = "About me, projects, and resume"
+languageCode = "en-us"
+title = "Ashley McKim's Website"
 theme = "PaperMod"
 
-# hugo.toml
+[params]
+  description = "About me, projects, and resume"
+
+  [params.homeInfoParams]
+    Title = "Ashley McKim's Website"
+    Content = "About me, projects, and resume"
+
+  [[params.socialIcons]]
+    name = "email"
+    url  = "mailto:amckim2022@my.fit.edu"
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -14,17 +22,11 @@ theme = "PaperMod"
     weight = 1
 
   [[menu.main]]
-    name = "About me"
-    url  = "/posts/"
+    name = "About"
+    url  = "/about/"
     weight = 2
 
   [[menu.main]]
     name = "Projects"
-    url  = "/about/"
+    url  = "/posts/"
     weight = 3
-
-[[params.socialIcons]]
-name = "Email"
-url  = "amckim2022@my.fit.edu"
-
-

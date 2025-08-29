@@ -2,20 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:55831/about/</loc>
-    <lastmod>2025-08-28T17:04:30-04:00</lastmod>
+    <loc>https://amckim2022.github.io/</loc>
+    <lastmod>2025-08-28T21:00:46-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:55831/</loc>
-    <lastmod>2025-08-28T17:04:30-04:00</lastmod>
+    <loc>https://amckim2022.github.io/posts/</loc>
+    <lastmod>2025-08-28T21:00:46-04:00</lastmod>
   </url><url>
-    <loc>http://localhost:55831/posts/my-first-post/</loc>
-    <lastmod>2025-08-28T15:00:21-04:00</lastmod>
+    <loc>https://amckim2022.github.io/categories/</loc>
   </url><url>
-    <loc>http://localhost:55831/posts/</loc>
-    <lastmod>2025-08-28T15:00:21-04:00</lastmod>
-  </url><url>
-    <loc>http://localhost:55831/categories/</loc>
-  </url><url>
-    <loc>http://localhost:55831/tags/</loc>
+    <loc>https://amckim2022.github.io/tags/</loc>
   </url>
 </urlset>
