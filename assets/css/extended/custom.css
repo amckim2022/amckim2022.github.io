@@ -1,7 +1,7 @@
 /* Keep the back-to-top button compact */
 .top-link {
-  width: 44px !important;
-  height: 44px !important;
+  width: 22px !important;
+  height: 22px !important;
   border-radius: 9999px;
 }
 .top-link svg {
