@@ -1,20 +1,72 @@
 baseURL = "https://amckim2022.github.io/"
 publishDir = "docs"
 languageCode = "en-us"
-title = "Ashley McKim's Website"
+title = "Ashley McKim — Portfolio"
 theme = "PaperMod"
+paginate = 10
+enableRobotsTXT = true
+
+# For PaperMod search (Fuse.js)
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# Clean URLs for posts/projects
+[permalinks]
+  posts = "/projects/:slug/"
 
 [params]
-  description = "About me, projects, and resume"
+  env = "production"                # enables SEO extras
+  description = "Projects, resume, and a bit about what I’m building."
+  author = "Ashley McKim"
+  keywords = ["Ashley McKim", "portfolio", "projects", "resume"]
+  defaultTheme = "auto"             # light/dark toggle
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  comments = false
 
+  # Home hero block (swap to profileMode if you want a photo)
   [params.homeInfoParams]
-    Title = "Ashley McKim's Website"
-    Content = "About me, projects, and resume"
+    Title = "Hi, I’m Ashley 👋"
+    Content = "I build things and write about them. Explore my projects and grab my resume."
 
+  # (Optional) Profile card instead of text hero
+  # [params.profileMode]
+  #   enabled = true
+  #   title = "Ashley McKim"
+  #   subtitle = "Engineering student • Builder"
+  #   imageUrl = "/images/headshot.jpg"     # 👈 add this file
+  #   imageWidth = 160
+  #   imageHeight = 160
+  #   buttons = [
+  #     { name = "Projects", url = "/projects/" },
+  #     { name = "Resume", url = "/resume/" }
+  #   ]
+
+  # Favicons / social preview (add these files under /static)
+  [params.assets]
+    favicon = "/favicon.ico"
+    favicon16x16 = "/favicon-16x16.png"
+    favicon32x32 = "/favicon-32x32.png"
+    apple_touch_icon = "/apple-touch-icon.png"
+    ogImage = "/images/og-cover.png"  # used for link previews
+
+  # Socials
   [[params.socialIcons]]
     name = "email"
     url  = "mailto:amckim2022@my.fit.edu"
 
+  [[params.socialIcons]]
+    name = "github"
+    url  = "https://github.com/amckim2022"   # 👈 add if you have one
+
+  [[params.socialIcons]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/ashley-mckim"  # 👈 update
+
+# Top nav
 [menu]
   [[menu.main]]
     name = "Home"
@@ -28,5 +80,10 @@ theme = "PaperMod"
 
   [[menu.main]]
     name = "Projects"
-    url  = "/posts/"
+    url  = "/projects/"
     weight = 3
+
+  [[menu.main]]
+    name = "Resume"
+    url  = "/resume/"
+    weight = 4
