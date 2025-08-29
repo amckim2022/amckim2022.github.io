@@ -27,3 +27,12 @@
   max-width: 24px;
   max-height: 24px;
 }
+
+/* /* Light mode */
+body { background-color: #f5f7fb; }
+
+/* Optional: make cards transparent if you want the bg to show through more */
+.post-entry, .single .page, .list .page, .archive .page { background: transparent; }
+
+/* Dark mode override (if you use the theme toggle) */
+[data-theme="dark"] body { background-color: #FAACF2; }
