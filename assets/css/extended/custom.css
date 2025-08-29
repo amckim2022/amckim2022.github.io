@@ -1,0 +1,29 @@
+/* Keep the back-to-top button compact */
+.top-link {
+  width: 44px !important;
+  height: 44px !important;
+  border-radius: 9999px;
+}
+.top-link svg {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+/* Keep header/footer social icons compact */
+.social-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+}
+.social-icons a svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* If some global CSS makes ALL svgs full-width, neutralize it here */
+.header svg, .footer svg, .social-icons svg, .top-link svg {
+  max-width: 24px;
+  max-height: 24px;
+}
